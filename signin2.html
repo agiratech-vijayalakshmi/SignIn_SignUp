@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="signin2.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="set">
+                <pre class="head">NEW ARRIVALS</pre>
+                <pre class="head1">JUST<br>FOR</pre>
+                <pre class="you">you</pre>
+                <div class="circle"></div>
+                <img class="girlpic" src="girl.png">
+            </div>
+                <div class="rightside">
+                    <div class="tit">
+                        <img class="log" src="icon.svg">
+                        <pre><h4 class="tit1"><span class="san">SAN</span> LIFESTYLE<span class="dot">.</span></h4></pre>
+                    </div>
+                    
+                    <div class="tab" id="links">
+                        <button class="tablinks" data-tab-target="#signin">Sign in</button>
+                        <button class="tablinks" data-tab-target="#Signup">Sign up</button>
+                    </div>
+
+                    <div id="signin"   data-tab-content class="tabcontent active">
+                        <div class="contents">
+                            <form>
+                                <div class="user_icon">                            
+                                    <span class="icon"><i class="fa fa-user icon"></i></span>
+                                    <input type="text" name="textbox" class="username" placeholder=" Enter your username">
+                                    
+                                </div>
+                                <div class="unlock">
+
+                                    <span class="icon2"><i class="fa fa-unlock"></i></i></span>
+                                    <input type="password" id="spw" name="password" class="pwd" placeholder=" Enter your password">
+                                </div>                               
+                                    <span id="se_pw"></span>
+                                <div class="choice">
+                                    <div class="labe"><input type="checkbox" class="rem" name="line" >
+                                        <label for=line class="label" >Remember me </label>
+                                    </div>
+                                    <div class="forgot"> 
+                                        <a href="www.w3schools.com">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <div class="but">
+                                     <button type="submit" onclick="signin()" >SIGN IN</button>
+                                </div>
+                            </form>
+                            
+                            <div class="or">
+                                <p class="or1"></p>
+                                <p>Or</p>
+                                <p class="or2"></p>
+                            </div>
+                            <div class="social">
+                                <p>With your social network</p>
+                            </div>
+                            <div class="img">
+                                <img  class ="google"src="./google.png">
+                                <img class="fb" src="./fb.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div id="Signup" data-tab-content class="tabcontent">                   
+                   
+                    <div class="content">
+                       <form>
+                            <div class="align">
+                           
+                                <div class="user_faw">
+                           
+                                    <span class="iconuser"><i class="fa fa-user icon"></i></span>
+                                
+                                    <input type="text" id="name" name="textbox1" class="username1" placeholder="   Enter your username" aria-label="3-digit area code" size="20">
+                                    
+                                </div>
+                                    <!-- <span id="e_name"></span> -->
+                                
+                                <div class="envelope_faw">
+
+                                    <span class="icon1"><i class="fa fa-envelope"></i></i></span>
+                                    <input type="email" id="email-id" name="email" class="mail1" placeholder="Enter your Email">
+                                </div>
+                                    <span id="e_email"></span>
+                                <div class="unlock_faw">
+
+                                    <span class="iconpwd"><i class="fa fa-unlock"></i></i></span>
+                                    <input type="password" id="pw" name="password" class="pwd0" placeholder="      Enter your password">
+                                </div>
+                                    <span id="e_pw"></span>
+                                <div class="unlock_fa">
+
+                                    <span class="icon3"><i class="fa fa-unlock"></i></span>
+                                    <input type="password" id="cpw" name="cpassword" class="pwd1" placeholder="     Confirm your password" > 
+                                    
+                                </div>
+                                <span id="e_cpw"></span>                         
+                                <!-- <span id='message'></span> -->
+                            </div>                          
+                            <div id="but" class="but">
+                                <button type="submit" id="signupbtn" onclick="signup()">SIGN UP</button>
+                            </div>
+                        </form>
+                            <div class="para">
+                                <pre><p> Already have an account?<a href="www.google.com"> Sign in instead</a></p></pre>
+                            </div>
+                            <div class="o_r">
+                            <p class="or_1"></p>
+                                <p>Or</p>
+                                <p class="or_2"></p>
+                            </div>
+                            <div class="social1">
+                                <p>With your social network</p>
+                            </div>
+                            <div class="img1">
+                                <img  class ="google"src="./google.png">
+                                <img class="fb" src="./fb.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+</body>
+</html>
